@@ -1,0 +1,16 @@
+.top-i {
+    position: absolute;
+    top: -40px;
+    right: 100px;
+}
+
+@media (min-width: 768px) {
+    .top-i {
+        position: absolute;
+        top: -40px;
+        right: 300px;
+    }
+}
+.menu {
+    width: 250px;
+}
