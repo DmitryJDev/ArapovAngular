@@ -16,9 +16,12 @@
                             </svg>
                             <ul class="language-dropdown" [class.open]="dropdownOpen">
                                 <li><a routerLink="/uk" routerLinkActive="active"
-                                        [routerLinkActiveOptions]='{exact:true}' (click)="closeDropdown()">UK</a></li>
-                                <li><a routerLink="/ru" routerLinkActive="active" (click)="closeDropdown()">RU</a></li>
-                                <li><a routerLink="/en" routerLinkActive="active" (click)="closeDropdown()">EN</a></li>
+                                        [routerLinkActiveOptions]='{exact:true}'
+                                        (click)="closeDropdown();changeLanguage('uk')">UK</a></li>
+                                <li><a routerLink="/ru" routerLinkActive="active"
+                                        (click)="closeDropdown() ; changeLanguage('ru')">RU</a></li>
+                                <li><a routerLink="/en" routerLinkActive="active"
+                                        (click)="closeDropdown() ; changeLanguage('en')">EN</a></li>
                             </ul>
                         </div>
                     </nav>

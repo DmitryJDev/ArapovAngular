@@ -3,14 +3,11 @@
         <div class="container">
             <div class="top-i">
                 <div class="top-slogan">
-
                 </div>
                 <div class="lang">
-
-
-
                     <div class="top-menu">
-                        <input type="checkbox" name="menu" id="menu" hidden>
+                        <input type="checkbox" name="menu" id="menu" hidden [checked]="isMenuOpen"
+                            (change)="toggleMenu()">
                         <label for="menu" class="show-menu">
 
                             <svg width="18" height="16" viewBox="0 0 18 16" fill="none"
@@ -20,57 +17,21 @@
                                 <rect y="12" width="18" height="2" rx="1" fill="#999999" />
                             </svg>
                         </label>
-                        <nav class="menu">
-                            <ul class="menu__list">
-                                <li><a href="#author" class=" js-scroll">Автор и ведущий курса</a></li>
-                                <li><a href="#result" class=" js-scroll">Видеообзоры</a></li>
-
-
+                        <nav class="menu" [ngClass]="{'open': isMenuOpen}">
+                            <ul class="menu__list ">
+                                <li><a routerLink="home" routerLinkActive="active" (click)="closeMenu()">Главная
+                                        страница</a>
+                                </li>
+                                <li><a routerLink="studying" routerLinkActive="active"
+                                        (click)="closeMenu()">Обучение</a>
+                                </li>
                                 <li><a href="#registration" class=" js-scroll">Запись на курс</a></li>
-
-
                             </ul>
-
                         </nav>
-
-
-
-
                     </div>
                 </div>
-
-
             </div>
         </div>
     </div>
 </header>
-
-<section class="hero-section" id="hero">
-    <div class="container">
-        <div class="section-i">
-            <div class="section-content">
-                <div class="hero-content">
-                    <h1>
-                        Авторское обучение трейдингу
-                    </h1>
-                    <p>Подберите для себя обучающую программу среди онлайн-курсов «Обучение трейдингу от
-                        ArapovTrade»
-                        и найдите финансовую независимость.
-                    </p>
-
-                    <div class="button-place">
-                        <a href="#registration" class="button js-scroll"><span style="margin-right:15px ;">Запись на
-                                курс</span> </a>
-                    </div>
-                </div>
-                <div class="hero-image-place  m-right">
-                    <picture class="hero-image">
-                        <source srcset="/assets/img/content/Igor-portrait2.png" media="(min-width: 600px)">
-                        <img src="/assets/img/content/Igor-portrait1.png" alt="author">
-
-                    </picture>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
+<router-outlet></router-outlet>
