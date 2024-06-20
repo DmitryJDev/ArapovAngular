@@ -1,0 +1,39 @@
+.top-i {
+    position: absolute;
+    top: -40px;
+    right: 100px;
+}
+.menu{
+        width: 250px;
+}
+@media (min-width: 768px) {
+    .top-i {
+        position: absolute;
+        top: -40px;
+        right: 300px;
+    }
+}
+
+.menu {
+    display: none;
+}
+
+.menu.open {
+    display: block;
+    position: absolute;
+    right: 0;
+    background: #1a1a1a;
+}
+
+.menu.open ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.menu.open a {
+    display: block;
+    padding: 12px 20px;
+    color: #9c9c9c;
+    text-decoration: none;
+}
