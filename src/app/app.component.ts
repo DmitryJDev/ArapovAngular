@@ -39,6 +39,9 @@ export class AppComponent {
     const newPath = pathSegments.join('/');
 
     // Перенаправление на новый путь
-    this.router.navigateByUrl(newPath);
+    this.router.navigateByUrl(newPath).then(() => {
+      // После перехода выполнить прокрутку страницы в самый верх
+      window.scrollTo(0, 0);
+    });
   }
 }

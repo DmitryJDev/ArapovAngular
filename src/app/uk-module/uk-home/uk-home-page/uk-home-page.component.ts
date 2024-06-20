@@ -5,4 +5,11 @@ import { Component } from '@angular/core';
   templateUrl: './uk-home-page.component.html',
   styleUrl: './uk-home-page.component.scss',
 })
-export class UkHomePageComponent {}
+export class UkHomePageComponent {
+  scrollToRegistration() {
+    const element = document.getElementById('registration');
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+  }
+}

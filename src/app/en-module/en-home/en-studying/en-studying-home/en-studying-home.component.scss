@@ -1,0 +1,78 @@
+.red {
+    color: #f63;
+    text-align: center;
+    font-family: Mont;
+    font-size: 20px;
+    line-height: 37px;
+    font-style: normal;
+    line-height: normal;
+    // letter-spacing: 0.22px;
+
+}
+
+
+
+
+
+/* Общие стили для всех блоков */
+.screen__list {
+    display: none;
+    /* По умолчанию скрываем все блоки */
+
+}
+
+/* Показываем блок 1 только на экранах менее 500px */
+@media (max-width: 499px) {
+    .one {
+        display: block;
+    }
+
+    .screen__img {
+        width: 90%;
+        height: 100%;
+    }
+}
+
+/* Показываем блок 2 на экранах от 500px до 799px */
+@media (min-width: 500px) and (max-width: 799px) {
+    .two {
+        display: block;
+    }
+
+    .screen__img {
+        width: 45%;
+        height: 100%;
+    }
+
+    .review-i__info {
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+/* Показываем блок 3 на экранах 800px и более */
+@media (min-width: 800px) {
+    .three {
+        display: block;
+    }
+
+    .screen__img {
+        width: 30%;
+        height: 100%;
+    }
+
+    .review-i__info {
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+article {
+    margin-top: 20px;
+}
+
+.studyingDownButton {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 20px 0;
+}
