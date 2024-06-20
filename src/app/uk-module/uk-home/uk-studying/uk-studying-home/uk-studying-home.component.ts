@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { Router } from '@angular/router';
+import { NavigationEnd, Router } from '@angular/router';
 
 @Component({
   selector: 'app-uk-studying-home',
@@ -7,26 +7,27 @@ import { Router } from '@angular/router';
   styleUrl: './uk-studying-home.component.scss',
 })
 export class UkStudyingHomeComponent {
-  constructor(private router: Router) {}
+  constructor(private router: Router) {
+    this.router.events.subscribe((event) => {
+      if (event instanceof NavigationEnd) {
+        if (typeof window !== 'undefined') {
+          window.scrollTo(0, 0);
+        }
+      }
+    });
+  }
 
-  changeLanguage(lang: string) {
-    // Получение текущего пути
-    const currentPath = this.router.url;
-
-    // Разделение пути на части
-    const pathSegments = currentPath.split('/');
-
-    // Замена языка в пути
-    if (pathSegments[1] === 'uk' || pathSegments[1] === 'en') {
-      pathSegments[1] = lang;
-    } else {
-      pathSegments.unshift(lang);
+  navigateToHomeWithId() {
+    this.router.navigateByUrl('/uk/home').then(() => {
+      setTimeout(() => {
+        this.scrollToRegistration();
+      }, 100);
+    });
+  }
+  scrollToRegistration() {
+    const element = document.getElementById('registration');
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth', block: 'start' });
     }
-
-    // Построение нового пути
-    const newPath = pathSegments.join('/');
-
-    // Перенаправление на новый путь
-    this.router.navigateByUrl(newPath);
   }
 }
