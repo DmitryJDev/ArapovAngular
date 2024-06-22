@@ -1,0 +1,25 @@
+{
+  "routes": [
+    "/en",
+    "/en/blog",
+    "/en/crypto",
+    "/en/home",
+    "/en/studying",
+    "/en/trading",
+    "/en/trading/adviceForBeginners",
+    "/ru",
+    "/ru/blog",
+    "/ru/crypto",
+    "/ru/home",
+    "/ru/studying",
+    "/ru/trading",
+    "/ru/trading/adviceForBeginners",
+    "/uk",
+    "/uk/blog",
+    "/uk/crypto",
+    "/uk/home",
+    "/uk/studying",
+    "/uk/trading",
+    "/uk/trading/adviceForBeginners"
+  ]
+}
