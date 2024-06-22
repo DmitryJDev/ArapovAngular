@@ -19,6 +19,27 @@ const routes: Routes = [
             (m) => m.RuStudyingModule
           ),
       },
+      {
+        path: 'trading',
+        loadChildren: () =>
+          import('./ru-home/ru-trading/ru-trading.module').then(
+            (m) => m.RuTradingModule
+          ),
+      },
+      {
+        path: 'crypto',
+        loadChildren: () =>
+          import('./ru-home/ru-crypto/ru-crypto.module').then(
+            (m) => m.RuCryptoModule
+          ),
+      },
+      {
+        path: 'blog',
+        loadChildren: () =>
+          import('./ru-home/ru-blog/ru-blog.module').then(
+            (m) => m.RuBlogModule
+          ),
+      },
     ],
   },
 ];

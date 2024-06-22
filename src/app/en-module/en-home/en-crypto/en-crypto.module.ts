@@ -1,13 +1,13 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { RuCryptoHomepageComponent } from './ru-crypto-homepage/ru-crypto-homepage.component';
+import { EnCryptoHomepageComponent } from './en-crypto-homepage/en-crypto-homepage.component';
 import { RouterModule } from '@angular/router';
 import { Routes } from '@angular/router';
 
-const routes: Routes = [{ path: '', component: RuCryptoHomepageComponent }];
+const routes: Routes = [{ path: '', component: EnCryptoHomepageComponent }];
 
 @NgModule({
-  declarations: [RuCryptoHomepageComponent],
+  declarations: [EnCryptoHomepageComponent],
   imports: [CommonModule, RouterModule.forChild(routes)],
 })
-export class RuCryptoModule {}
+export class EnCryptoModule {}

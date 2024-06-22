@@ -2,11 +2,11 @@ import { Component } from '@angular/core';
 import { NavigationEnd, Router } from '@angular/router';
 
 @Component({
-  selector: 'app-uk-trading-homepage',
-  templateUrl: './uk-trading-homepage.component.html',
-  styleUrl: './uk-trading-homepage.component.scss',
+  selector: 'app-en-trading-homepage',
+  templateUrl: './en-trading-homepage.component.html',
+  styleUrl: './en-trading-homepage.component.scss',
 })
-export class UkTradingHomepageComponent {
+export class EnTradingHomepageComponent {
   constructor(private router: Router) {
     this.router.events.subscribe((event) => {
       if (event instanceof NavigationEnd) {
@@ -22,7 +22,7 @@ export class UkTradingHomepageComponent {
     const id = target.closest('.programm__list')?.getAttribute('data-id');
 
     if (id) {
-      this.router.navigate([`/uk/trading/${id}`]);
+      this.router.navigate([`/en/trading/${id}`]);
     } else {
       console.error('ID not found');
     }
