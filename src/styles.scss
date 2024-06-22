@@ -1635,6 +1635,9 @@ footer .footer-i .footer-text p:last-child {
     .section-i {
         padding: 80px 0;
     }
+    .padd{
+        padding-bottom: 150px;
+    }
 }
 
 .benefits {
@@ -1886,7 +1889,7 @@ footer .footer-i .footer-text p:last-child {
 @media (min-width: 900px) {
     .programm__in {
         font-size: 18px;
-        line-height: 30x;
+        line-height: 30px;
         padding: 48px 0;
     }
 }
@@ -1913,7 +1916,7 @@ footer .footer-i .footer-text p:last-child {
 .programm__content {
     padding: 0 9px 0 calc(1em + 9px);
     margin: 16px 0 0;
-    line-height: normal;
+    // line-height: normal;
 }
 
 @media (min-width: 900px) {
@@ -2774,7 +2777,7 @@ div.horizontalfield {
     padding: 0 35px;
 }
 html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+// body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 
 
 
