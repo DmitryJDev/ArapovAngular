@@ -1,12 +1,15 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { UkModuleModule } from './uk-module/uk-module.module';
 
 const routes: Routes = [
   { path: '', redirectTo: 'uk', pathMatch: 'full' },
   {
+    // path: 'uk',
+    // loadChildren: () =>
+    //   import('./uk-module/uk-module.module').then((m) => m.UkModuleModule),
     path: 'uk',
-    loadChildren: () =>
-      import('./uk-module/uk-module.module').then((m) => m.UkModuleModule),
+    loadChildren: () => UkModuleModule,
   },
   {
     path: 'ru',
