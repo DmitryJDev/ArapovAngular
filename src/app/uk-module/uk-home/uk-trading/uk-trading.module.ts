@@ -3,15 +3,43 @@ import { CommonModule } from '@angular/common';
 import { UkTradingHomepageComponent } from './uk-trading-homepage/uk-trading-homepage.component';
 import { RouterModule } from '@angular/router';
 import { Routes } from '@angular/router';
-import { UkTraidingArticleOneComponent } from './uk-traiding-article-one/uk-traiding-article-one.component';
 
 const routes: Routes = [
   { path: '', component: UkTradingHomepageComponent },
-  { path: 'adviceForBeginners', component: UkTraidingArticleOneComponent },
+
+  {
+    path: 'adviceForBeginners',
+    loadChildren: () =>
+      import('./one-article/one-article.module').then(
+        (m) => m.OneArticleModule
+      ),
+  },
+
+  {
+    path: 'two',
+    loadChildren: () =>
+      import('./two-article/two-article.module').then(
+        (m) => m.TwoArticleModule
+      ),
+  },
+  {
+    path: 'three',
+    loadChildren: () =>
+      import('./three-article/three-article.module').then(
+        (m) => m.ThreeArticleModule
+      ),
+  },
+  {
+    path: 'four',
+    loadChildren: () =>
+      import('./four-article/four-article.module').then(
+        (m) => m.FourArticleModule
+      ),
+  },
 ];
 
 @NgModule({
-  declarations: [UkTradingHomepageComponent, UkTraidingArticleOneComponent],
+  declarations: [UkTradingHomepageComponent],
   imports: [CommonModule, RouterModule.forChild(routes)],
 })
 export class UkTradingModule {}
