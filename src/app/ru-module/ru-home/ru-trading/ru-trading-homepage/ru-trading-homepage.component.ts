@@ -18,13 +18,12 @@ export class RuTradingHomepageComponent {
   }
 
   routById(event: Event) {
-    const target = event.target as HTMLElement;
-    const id = target.closest('.programm__list')?.getAttribute('data-id');
-
-    if (id) {
-      this.router.navigate([`/ru/trading/${id}`]);
-    } else {
-      console.error('ID not found');
-    }
+    //   const target = event.target as HTMLElement;
+    //   const id = target.closest('.programm__list')?.getAttribute('data-id');
+    //   if (id) {
+    //     this.router.navigate([`/ru/trading/${id}`]);
+    //   } else {
+    //     console.error('ID not found');
+    //   }
   }
 }

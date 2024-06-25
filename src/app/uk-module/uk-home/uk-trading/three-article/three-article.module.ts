@@ -1,14 +1,14 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { HomeComponent } from './home/home.component';
 
 import { RouterModule } from '@angular/router';
 import { Routes } from '@angular/router';
+import { HomeUkThreeComponent } from './home-uk-three/home-uk-three.component';
 
-const routes: Routes = [{ path: '', component: HomeComponent }];
+const routes: Routes = [{ path: '', component: HomeUkThreeComponent }];
 
 @NgModule({
-  declarations: [HomeComponent],
+  declarations: [HomeUkThreeComponent],
   imports: [CommonModule, RouterModule.forChild(routes)],
 })
 export class ThreeArticleModule {}

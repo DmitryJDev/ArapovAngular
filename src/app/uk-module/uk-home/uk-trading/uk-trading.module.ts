@@ -36,6 +36,13 @@ const routes: Routes = [
         (m) => m.FourArticleModule
       ),
   },
+  {
+    path: 'five',
+    loadChildren: () =>
+      import('./five-article/five-article.module').then(
+        (m) => m.FiveArticleModule
+      ),
+  },
 ];
 
 @NgModule({
