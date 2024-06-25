@@ -6,12 +6,16 @@ import { RouterModule } from '@angular/router';
 import { RuHomePageComponent } from './ru-home/ru-home-page/ru-home-page.component';
 
 const routes: Routes = [
-  { path: '', redirectTo: 'home', pathMatch: 'full' },
+  // { path: '', redirectTo: 'home', pathMatch: 'full' },
   {
     path: '',
+    // path: 'home',
+
     component: RuHomeComponent,
     children: [
       { path: 'home', component: RuHomePageComponent },
+      // { path: '', component: RuHomePageComponent },
+
       {
         path: 'studying',
         loadChildren: () =>

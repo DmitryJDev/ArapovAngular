@@ -6,7 +6,7 @@ import { RouterModule } from '@angular/router';
 import { HomePageComponent } from './en-home/home-page/home-page.component';
 
 const routes: Routes = [
-  { path: '', redirectTo: 'home', pathMatch: 'full' },
+  // { path: '', redirectTo: 'home', pathMatch: 'full' },
   {
     path: '',
     component: EnHomeComponent,
