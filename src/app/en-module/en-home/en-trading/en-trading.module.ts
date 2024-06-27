@@ -15,28 +15,28 @@ const routes: Routes = [
       ),
   },
   {
-    path: 'two',
+    path: 'marketBasics',
     loadChildren: () =>
       import('./two-en-article/two-en-article.module').then(
         (m) => m.TwoEnArticleModule
       ),
   },
   {
-    path: 'three',
+    path: 'exchange',
     loadChildren: () =>
       import('./three-en-article/three-en-article.module').then(
         (m) => m.ThreeEnArticleModule
       ),
   },
   {
-    path: 'four',
+    path: 'exchangeMarket',
     loadChildren: () =>
       import('./four-en-article/four-en-article.module').then(
         (m) => m.FourEnArticleModule
       ),
   },
   {
-    path: 'five',
+    path: 'derivatives',
     loadChildren: () =>
       import('./five-en-article/five-en-article.module').then(
         (m) => m.FiveEnArticleModule

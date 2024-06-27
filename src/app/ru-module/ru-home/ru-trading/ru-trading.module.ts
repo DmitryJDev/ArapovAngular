@@ -17,28 +17,28 @@ const routes: Routes = [
   },
 
   {
-    path: 'two',
+    path: 'marketBasics',
     loadChildren: () =>
       import('./two-ru-article/two-ru-article.module').then(
         (m) => m.TwoRuArticleModule
       ),
   },
   {
-    path: 'three',
+    path: 'exchange',
     loadChildren: () =>
       import('./three-ru-article/three-ru-article.module').then(
         (m) => m.ThreeRuArticleModule
       ),
   },
   {
-    path: 'four',
+    path: 'exchangeMarket',
     loadChildren: () =>
       import('./four-ru-article/four-ru-article.module').then(
         (m) => m.FourRuArticleModule
       ),
   },
   {
-    path: 'five',
+    path: 'derivatives',
     loadChildren: () =>
       import('./five-ru-article/five-ru-article.module').then(
         (m) => m.FiveRuArticleModule

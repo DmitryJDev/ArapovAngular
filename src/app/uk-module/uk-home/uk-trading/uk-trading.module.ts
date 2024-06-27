@@ -16,28 +16,28 @@ const routes: Routes = [
   },
 
   {
-    path: 'two',
+    path: 'marketBasics',
     loadChildren: () =>
       import('./two-article/two-article.module').then(
         (m) => m.TwoArticleModule
       ),
   },
   {
-    path: 'three',
+    path: 'exchange',
     loadChildren: () =>
       import('./three-article/three-article.module').then(
         (m) => m.ThreeArticleModule
       ),
   },
   {
-    path: 'four',
+    path: 'exchangeMarket',
     loadChildren: () =>
       import('./four-article/four-article.module').then(
         (m) => m.FourArticleModule
       ),
   },
   {
-    path: 'five',
+    path: 'derivatives',
     loadChildren: () =>
       import('./five-article/five-article.module').then(
         (m) => m.FiveArticleModule
