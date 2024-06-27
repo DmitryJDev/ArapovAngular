@@ -46,3 +46,11 @@
 .programm__item {
     padding: 20px;
 }
+.programm__title {
+    text-align: center;
+}
+@media (min-width: 900px) {
+    h1 {
+        text-align: center !important;
+    }
+}

@@ -1,0 +1,23 @@
+.hero-section {
+    background: url(/assets/img/content/osnovirinka.jpg) no-repeat bottom right;
+    background-size: 100% 100%;
+    color: white;
+    height: 300px;
+}
+
+.section-i {
+    padding: 0;
+}
+
+.pictureImg {
+    width: 300px;
+    float: right;
+    margin-left: 20px;
+}
+h2,h1{
+    align-self: center;
+}
+@media (min-width: 900px) {
+    h1 {
+        text-align: center !important;
+    }}
