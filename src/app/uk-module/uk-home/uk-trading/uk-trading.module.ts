@@ -50,6 +50,13 @@ const routes: Routes = [
         (m) => m.SixUkArtikleModule
       ),
   },
+  {
+    path: 'forexMarket',
+    loadChildren: () =>
+      import('./seven-uk-article/seven-uk-article.module').then(
+        (m) => m.SevenUkArticleModule
+      ),
+  },
 ];
 
 @NgModule({
