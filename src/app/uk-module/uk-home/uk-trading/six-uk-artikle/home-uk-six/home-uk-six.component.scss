@@ -1,5 +1,5 @@
 .hero-section {
-    background: url(/assets/img/content/traderStarterw.webp) no-repeat bottom right;
+    background: url(/assets/img/content/uchastnikiBirgi.webp) no-repeat bottom right;
     background-size: 100% 100%;
     color: white;
     height: 300px;
@@ -13,6 +13,11 @@
     width: 300px;
     float: right;
     margin-left: 20px;
+}
+
+h2,
+h1 {
+    align-self: center;
 }
 
 @media (min-width: 700px) {
@@ -35,4 +40,14 @@
     .hero-section {
         height: 600px;
     }
+}
+
+.flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pad6 {
+    padding: 60px 0;
 }

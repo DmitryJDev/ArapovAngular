@@ -1,5 +1,5 @@
 .hero-section {
-    background: url(/assets/img/content/traderStarterw.webp) no-repeat bottom right;
+    background: url(/assets/img/content/uchastnikiBirgi.webp) no-repeat bottom right;
     background-size: 100% 100%;
     color: white;
     height: 300px;
@@ -15,24 +15,35 @@
     margin-left: 20px;
 }
 
-@media (min-width: 700px) {
+h2,
+h1 {
+    align-self: center;
+}
+
+@media (min-width: 700px) {     
     .hero-section {
         height: 400px;
     }
 }
-
 @media (min-width: 900px) {
     h1 {
         text-align: center !important;
     }
-
-    .hero-section {
-        height: 500px;
-    }
+        .hero-section {            
+            height: 500px;
+        }
 }
-
-@media (min-width: 1100px) {
+@media (min-width: 1100px) {  
     .hero-section {
         height: 600px;
     }
+}
+.flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pad6 {
+    padding: 60px 0;
 }

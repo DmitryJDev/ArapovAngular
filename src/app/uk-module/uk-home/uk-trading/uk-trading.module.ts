@@ -43,6 +43,13 @@ const routes: Routes = [
         (m) => m.FiveArticleModule
       ),
   },
+  {
+    path: 'exchangeParticipants',
+    loadChildren: () =>
+      import('./six-uk-artikle/six-uk-artikle.module').then(
+        (m) => m.SixUkArtikleModule
+      ),
+  },
 ];
 
 @NgModule({
