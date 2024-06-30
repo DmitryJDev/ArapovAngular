@@ -57,6 +57,62 @@ const routes: Routes = [
         (m) => m.SevenUkArticleModule
       ),
   },
+  {
+    path: 'currenciesAndQuotes',
+    loadChildren: () =>
+      import('./eight-uk-article/eight-uk-article.module').then(
+        (m) => m.EightUkArticleModule
+      ),
+  },
+  {
+    path: 'formationExchange',
+    loadChildren: () =>
+      import('./nine-uk-artickle/nine-uk-artickle.module').then(
+        (m) => m.NineUkArtickleModule
+      ),
+  },
+  {
+    path: 'f10',
+    loadChildren: () =>
+      import('./ten-uk-artickle/ten-uk-artickle.module').then(
+        (m) => m.TenUkArtickleModule
+      ),
+  },
+  {
+    path: 'f11',
+    loadChildren: () =>
+      import('./eleven-uk-artickle/eleven-uk-artickle.module').then(
+        (m) => m.ElevenUkArtickleModule
+      ),
+  },
+  {
+    path: 'f12',
+    loadChildren: () =>
+      import('./twelve-uk-artickle/twelve-uk-artickle.module').then(
+        (m) => m.TwelveUkArtickleModule
+      ),
+  },
+  {
+    path: 'f13',
+    loadChildren: () =>
+      import('./thirteen-uk-artickle/thirteen-uk-artickle.module').then(
+        (m) => m.ThirteenUkArtickleModule
+      ),
+  },
+  {
+    path: 'f14',
+    loadChildren: () =>
+      import('./fourteen-uk-artickle/fourteen-uk-artickle.module').then(
+        (m) => m.FourteenUkArtickleModule
+      ),
+  },
+  {
+    path: 'f15',
+    loadChildren: () =>
+      import('./fifteen-uk-artickle/fifteen-uk-artickle.module').then(
+        (m) => m.FifteenUkArtickleModule
+      ),
+  },
 ];
 
 @NgModule({
