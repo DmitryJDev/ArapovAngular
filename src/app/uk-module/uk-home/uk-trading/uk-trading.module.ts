@@ -72,14 +72,14 @@ const routes: Routes = [
       ),
   },
   {
-    path: 'f10',
+    path: 'currencyPosition',
     loadChildren: () =>
       import('./ten-uk-artickle/ten-uk-artickle.module').then(
         (m) => m.TenUkArtickleModule
       ),
   },
   {
-    path: 'f11',
+    path: 'forexValueDate',
     loadChildren: () =>
       import('./eleven-uk-artickle/eleven-uk-artickle.module').then(
         (m) => m.ElevenUkArtickleModule
