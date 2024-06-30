@@ -56,6 +56,63 @@ const routes: Routes = [
         (m) => m.SevenEnArticleModule
       ),
   },
+  {
+    path: 'currenciesAndQuotes',
+    loadChildren: () =>
+      import('./eight-en-article/eight-en-article.module').then(
+        (m) => m.EightEnArticleModule
+      ),
+  },
+  {
+    path: 'formationExchange',
+    loadChildren: () =>
+      import('./nine-en-artickle/nine-en-artickle.module').then(
+        (m) => m.NineEnArtickleModule
+      ),
+  },
+
+  {
+    path: 'currencyPosition',
+    loadChildren: () =>
+      import('./ten-en-artickle/ten-en-artickle.module').then(
+        (m) => m.TenEnArtickleModule
+      ),
+  },
+  {
+    path: 'forexValueDate',
+    loadChildren: () =>
+      import('./eleven-en-artickle/eleven-en-artickle.module').then(
+        (m) => m.ElevenEnArtickleModule
+      ),
+  },
+  {
+    path: 'f12',
+    loadChildren: () =>
+      import('./twelve-en-artickle/twelve-en-artickle.module').then(
+        (m) => m.TwelveEnArtickleModule
+      ),
+  },
+  {
+    path: 'f13',
+    loadChildren: () =>
+      import('./thirteen-en-artickle/thirteen-en-artickle.module').then(
+        (m) => m.ThirteenEnArtickleModule
+      ),
+  },
+  {
+    path: 'f14',
+    loadChildren: () =>
+      import('./fourteen-en-artickle/fourteen-en-artickle.module').then(
+        (m) => m.FourteenEnArtickleModule
+      ),
+  },
+  {
+    path: 'f15',
+    loadChildren: () =>
+      import('./fifteen-en-artickle/fifteen-en-artickle.module').then(
+        (m) => m.FifteenEnArtickleModule
+      ),
+  },
 ];
 
 @NgModule({
