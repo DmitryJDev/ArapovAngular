@@ -18,16 +18,23 @@ export class RuStudyingHomeComponent {
   }
 
   navigateToHomeWithId() {
-    this.router.navigateByUrl('/ru/home').then(() => {
-      setTimeout(() => {
-        this.scrollToRegistration();
-      }, 100);
-    });
+    this.router
+      .navigateByUrl('/ru/home')
+      .then(() => {
+        setTimeout(() => {
+          this.scrollToRegistration();
+        }, 100);
+      })
+      .catch((err) => {
+        console.error('Navigation error:', err);
+      });
   }
   scrollToRegistration() {
     const element = document.getElementById('registrationRu');
     if (element) {
       element.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    } else {
+      console.error('Element with id "registrationRu" not found');
     }
   }
 }
