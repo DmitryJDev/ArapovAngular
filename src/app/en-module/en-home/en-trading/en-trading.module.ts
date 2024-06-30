@@ -86,7 +86,7 @@ const routes: Routes = [
       ),
   },
   {
-    path: 'f12',
+    path: 'howToMakeMoney',
     loadChildren: () =>
       import('./twelve-en-artickle/twelve-en-artickle.module').then(
         (m) => m.TwelveEnArtickleModule
