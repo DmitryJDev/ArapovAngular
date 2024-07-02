@@ -115,6 +115,41 @@ const routes: Routes = [
         (m) => m.FifteenRuArtickleModule
       ),
   },
+  {
+    path: 'f16',
+    loadChildren: () =>
+      import('./six-ru-article/six-ru-article.module').then(
+        (m) => m.SixRuArticleModule
+      ),
+  },
+  {
+    path: 'f17',
+    loadChildren: () =>
+      import('./seventeen-ru-artickle/seventeen-ru-artickle.module').then(
+        (m) => m.SeventeenRuArtickleModule
+      ),
+  },
+  {
+    path: 'f18',
+    loadChildren: () =>
+      import('./eighteen-ru-artickle/eighteen-ru-artickle.module').then(
+        (m) => m.EighteenRuArtickleModule
+      ),
+  },
+  {
+    path: 'f19',
+    loadChildren: () =>
+      import('./nineteen-ru-artickle/nineteen-ru-artickle.module').then(
+        (m) => m.NineteenRuArtickleModule
+      ),
+  },
+  {
+    path: 'f20',
+    loadChildren: () =>
+      import('./twenty-ru-artickle/twenty-ru-artickle.module').then(
+        (m) => m.TwentyRuArtickleModule
+      ),
+  },
 ];
 
 @NgModule({
