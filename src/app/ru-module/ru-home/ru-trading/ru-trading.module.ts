@@ -118,8 +118,8 @@ const routes: Routes = [
   {
     path: 'f16',
     loadChildren: () =>
-      import('./six-ru-article/six-ru-article.module').then(
-        (m) => m.SixRuArticleModule
+      import('./sixteen-ru-artickle/sixteen-ru-artickle.module').then(
+        (m) => m.SixteenRuArtickleModule
       ),
   },
   {
