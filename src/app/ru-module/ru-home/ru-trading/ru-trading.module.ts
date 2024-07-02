@@ -95,24 +95,59 @@ const routes: Routes = [
       ),
   },
   {
-    path: 'f13',
+    path: 'riskCurrencyExchange',
     loadChildren: () =>
       import('./thirteen-ru-artickle/thirteen-ru-artickle.module').then(
         (m) => m.ThirteenRuArtickleModule
       ),
   },
   {
-    path: 'f14',
+    path: 'forexLeverageRisk',
     loadChildren: () =>
       import('./fourteen-ru-artickle/fourteen-ru-artickle.module').then(
         (m) => m.FourteenRuArtickleModule
       ),
   },
   {
-    path: 'f15',
+    path: 'majorBankFrs',
     loadChildren: () =>
       import('./fifteen-ru-artickle/fifteen-ru-artickle.module').then(
         (m) => m.FifteenRuArtickleModule
+      ),
+  },
+  {
+    path: 'f16',
+    loadChildren: () =>
+      import('./six-ru-article/six-ru-article.module').then(
+        (m) => m.SixRuArticleModule
+      ),
+  },
+  {
+    path: 'f17',
+    loadChildren: () =>
+      import('./seventeen-ru-artickle/seventeen-ru-artickle.module').then(
+        (m) => m.SeventeenRuArtickleModule
+      ),
+  },
+  {
+    path: 'f18',
+    loadChildren: () =>
+      import('./eighteen-ru-artickle/eighteen-ru-artickle.module').then(
+        (m) => m.EighteenRuArtickleModule
+      ),
+  },
+  {
+    path: 'f19',
+    loadChildren: () =>
+      import('./nineteen-ru-artickle/nineteen-ru-artickle.module').then(
+        (m) => m.NineteenRuArtickleModule
+      ),
+  },
+  {
+    path: 'f20',
+    loadChildren: () =>
+      import('./twenty-ru-artickle/twenty-ru-artickle.module').then(
+        (m) => m.TwentyRuArtickleModule
       ),
   },
 ];

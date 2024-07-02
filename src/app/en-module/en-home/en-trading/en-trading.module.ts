@@ -93,24 +93,59 @@ const routes: Routes = [
       ),
   },
   {
-    path: 'f13',
+    path: 'riskCurrencyExchange',
     loadChildren: () =>
       import('./thirteen-en-artickle/thirteen-en-artickle.module').then(
         (m) => m.ThirteenEnArtickleModule
       ),
   },
   {
-    path: 'f14',
+    path: 'forexLeverageRisk',
     loadChildren: () =>
       import('./fourteen-en-artickle/fourteen-en-artickle.module').then(
         (m) => m.FourteenEnArtickleModule
       ),
   },
   {
-    path: 'f15',
+    path: 'majorBankFrs',
     loadChildren: () =>
       import('./fifteen-en-artickle/fifteen-en-artickle.module').then(
         (m) => m.FifteenEnArtickleModule
+      ),
+  },
+  {
+    path: 'f16',
+    loadChildren: () =>
+      import('./sixteen-en-artickle/sixteen-en-artickle.module').then(
+        (m) => m.SixteenEnArtickleModule
+      ),
+  },
+  {
+    path: 'f17',
+    loadChildren: () =>
+      import('./seventeen-en-artickle/seventeen-en-artickle.module').then(
+        (m) => m.SeventeenEnArtickleModule
+      ),
+  },
+  {
+    path: 'f18',
+    loadChildren: () =>
+      import('./eighteen-en-artickle/eighteen-en-artickle.module').then(
+        (m) => m.EighteenEnArtickleModule
+      ),
+  },
+  {
+    path: 'f19',
+    loadChildren: () =>
+      import('./nineteen-en-artickle/nineteen-en-artickle.module').then(
+        (m) => m.NineteenEnArtickleModule
+      ),
+  },
+  {
+    path: 'f20',
+    loadChildren: () =>
+      import('./twenty-en-artickle/twenty-en-artickle.module').then(
+        (m) => m.TwentyEnArtickleModule
       ),
   },
 ];
