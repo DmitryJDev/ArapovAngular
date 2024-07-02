@@ -93,21 +93,21 @@ const routes: Routes = [
       ),
   },
   {
-    path: 'f13',
+    path: 'riskCurrencyExchange',
     loadChildren: () =>
       import('./thirteen-en-artickle/thirteen-en-artickle.module').then(
         (m) => m.ThirteenEnArtickleModule
       ),
   },
   {
-    path: 'f14',
+    path: 'forexLeverageRisk',
     loadChildren: () =>
       import('./fourteen-en-artickle/fourteen-en-artickle.module').then(
         (m) => m.FourteenEnArtickleModule
       ),
   },
   {
-    path: 'f15',
+    path: 'majorBankFrs',
     loadChildren: () =>
       import('./fifteen-en-artickle/fifteen-en-artickle.module').then(
         (m) => m.FifteenEnArtickleModule

@@ -95,21 +95,21 @@ const routes: Routes = [
       ),
   },
   {
-    path: 'f13',
+    path: 'riskCurrencyExchange',
     loadChildren: () =>
       import('./thirteen-ru-artickle/thirteen-ru-artickle.module').then(
         (m) => m.ThirteenRuArtickleModule
       ),
   },
   {
-    path: 'f14',
+    path: 'forexLeverageRisk',
     loadChildren: () =>
       import('./fourteen-ru-artickle/fourteen-ru-artickle.module').then(
         (m) => m.FourteenRuArtickleModule
       ),
   },
   {
-    path: 'f15',
+    path: 'majorBankFrs',
     loadChildren: () =>
       import('./fifteen-ru-artickle/fifteen-ru-artickle.module').then(
         (m) => m.FifteenRuArtickleModule
