@@ -1,0 +1,12 @@
+[
+  {
+    "path": "/uk",
+    "redirectTo": "/uk/home",
+    "pathMatch": "full"
+  },
+  {
+    "path": "/",
+    "redirectTo": "/uk/home",
+    "pathMatch": "full"
+  }
+]
