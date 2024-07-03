@@ -3,13 +3,13 @@ import { RouterModule, Routes } from '@angular/router';
 import { UkModuleModule } from './uk-module/uk-module.module';
 
 const routes: Routes = [
-  { path: '', redirectTo: 'uk', pathMatch: 'full' },
+  { path: '', redirectTo: 'uk/home', pathMatch: 'full' },
   {
-    // path: 'uk',
-    // loadChildren: () =>
-    //   import('./uk-module/uk-module.module').then((m) => m.UkModuleModule),
     path: 'uk',
-    loadChildren: () => UkModuleModule,
+    loadChildren: () =>
+      import('./uk-module/uk-module.module').then((m) => m.UkModuleModule),
+    // path: 'uk',
+    // loadChildren: () => UkModuleModule,
   },
   {
     path: 'ru',

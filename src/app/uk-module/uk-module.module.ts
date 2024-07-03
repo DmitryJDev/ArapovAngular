@@ -6,11 +6,13 @@ import { RouterModule } from '@angular/router';
 import { UkHomePageComponent } from './uk-home/uk-home-page/uk-home-page.component';
 
 const routes: Routes = [
-  { path: '', redirectTo: 'home', pathMatch: 'full' },
+  // { path: '', redirectTo: 'home', pathMatch: 'full' },
   {
     path: '',
     component: UkHomeComponent,
     children: [
+      { path: '', redirectTo: 'home', pathMatch: 'full' }, //new
+
       { path: 'home', component: UkHomePageComponent },
       {
         path: 'studying',
