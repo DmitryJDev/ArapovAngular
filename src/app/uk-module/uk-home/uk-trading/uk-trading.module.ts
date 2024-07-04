@@ -114,7 +114,7 @@ const routes: Routes = [
       ),
   },
   {
-    path: 'f16',
+    path: 'behavioralRisks',
     loadChildren: () =>
       import('./sixteen-uk-artickle/sixteen-uk-artickle.module').then(
         (m) => m.SixteenUkArtickleModule

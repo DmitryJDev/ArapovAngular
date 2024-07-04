@@ -2,6 +2,8 @@ import { NgModule } from '@angular/core';
 import {
   BrowserModule,
   provideClientHydration,
+  Title,
+  Meta,
 } from '@angular/platform-browser';
 import { provideAnimationsAsync } from '@angular/platform-browser/animations/async';
 import { MatSelectModule } from '@angular/material/select';
@@ -21,7 +23,7 @@ import { UkModuleModule } from './uk-module/uk-module.module';
     MatSelectModule,
     UkModuleModule,
   ],
-  providers: [provideClientHydration(), provideAnimationsAsync()],
+  providers: [provideClientHydration(), provideAnimationsAsync(), Title, Meta],
   bootstrap: [AppComponent],
 })
 export class AppModule {}
