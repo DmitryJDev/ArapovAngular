@@ -25,7 +25,11 @@ export class HomeUkTwoComponent implements OnInit {
     // this.cs.setCanonicalURL(
     //   'https://arapov-trading.vercel.app/uk/trading/marketBasics'
     // );
-    this.metaService.addTag({
+    // this.metaService.addTag({
+    //   rel: 'canonical',
+    //   href: 'https://arapov-trading.vercel.app/uk/trading/marketBasics',
+    // });
+    this.metaService.updateTag({
       rel: 'canonical',
       href: 'https://arapov-trading.vercel.app/uk/trading/marketBasics',
     });
