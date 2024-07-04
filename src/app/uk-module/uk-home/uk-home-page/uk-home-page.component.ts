@@ -1,11 +1,19 @@
 import { Component } from '@angular/core';
-
+import { Meta, Title } from '@angular/platform-browser';
 @Component({
   selector: 'app-uk-home-page',
   templateUrl: './uk-home-page.component.html',
   styleUrl: './uk-home-page.component.scss',
 })
 export class UkHomePageComponent {
+  constructor(private meta: Meta, private titleService: Title) {}
+  ngOnInit(): void {
+    this.titleService.setTitle('Home Page');
+    this.meta.addTag({
+      rel: 'canonical',
+      href: 'https://arapov-trading.vercel.app/uk/home',
+    });
+  }
   scrollToRegistration() {
     const element = document.getElementById('registration');
     if (element) {
