@@ -8,12 +8,19 @@ import { Meta, Title } from '@angular/platform-browser';
 export class UkHomePageComponent {
   constructor(private meta: Meta, private titleService: Title) {}
   ngOnInit(): void {
-    this.titleService.setTitle('Home Page');
-    this.meta.addTag({
-      rel: 'canonical',
-      href: 'https://arapov-trading.vercel.app/uk/home',
-    });
+    // this.titleService.setTitle('Home Page');
+    // this.meta.addTag({
+    //   rel: 'canonical',
+    //   href: 'https://arapov-trading.vercel.app/uk/home',
+    // });
+    this.setCanonicalURL('https://arapov-trading.vercel.app/uk/home');
   }
+
+  setCanonicalURL(url?: string) {
+    const canURL = url === undefined ? window.location.href : url;
+    this.meta.updateTag({ name: 'canonical', content: canURL });
+  }
+
   scrollToRegistration() {
     const element = document.getElementById('registration');
     if (element) {
