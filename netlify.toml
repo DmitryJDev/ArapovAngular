@@ -1,7 +1,7 @@
 [build]
 command = "npm run build"
 functions = './functions'
-publish = "./dist/projectArapov/browser"
+publish = "./dist/project-arapov/browser"
 
 [[redirects]]
   from = "/*"
