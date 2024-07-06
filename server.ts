@@ -31,7 +31,7 @@ export function app(): express.Express {
   // All regular routes use the Angular engine
   server.get('**', (req, res, next) => {
     const { protocol, originalUrl, baseUrl, headers } = req;
-
+    console.log(`Handling request for: ${req.url}`);
     commonEngine
       .render({
         bootstrap: AppServerModule,
